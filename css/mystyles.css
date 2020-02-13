@@ -1,0 +1,192 @@
+/*border: red 5px solid;*/
+
+body{
+    background-color: coral;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#cintillo>img{
+
+    height: 100px;
+    width: 100px;
+    float: left;
+
+}
+#cintillo{
+
+    color: rgb(19, 21, 143);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+}
+#navegador{
+    background-color: ghostwhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(19, 21, 143);
+    text-align: center;
+    list-style-type: none;
+    font-weight: bolder;
+ }
+#navegador>li{
+    display: inline;
+    padding-left: 60px;
+}
+#navegador>li>a{
+    text-decoration: none;
+}
+
+footer{
+    background-color:rgb(19, 21, 143);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0px;
+    color: ghostwhite;
+    font-weight: bolder;
+    
+}
+
+/*-------HOME--------*/
+
+#Contenido{
+    /*border: red 5px solid;*/
+    height:420px;
+    font-size: 50px;
+    font-family: fantasy;
+    color: ghostwhite;
+    text-align: center;
+}
+
+#Contenido>img{
+    float: left;
+    margin-right: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+/*-------SOBRE NOSOTROS--------*/
+
+#AboutUs{
+    
+    height:420px;
+    font-size: 50px;
+    font-family: fantasy;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#AboutUs>img{
+    float: right;
+    margin-right: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+/*-------CONTACTANOS--------*/
+
+#contactanos{
+    
+    height:420px;
+    font-size: 50px;
+    font-family: fantasy;
+    color: blue;
+    text-align: center;
+}
+#izquierda{
+    float: right;
+    margin-right: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+#derecha{
+    float: left;
+    margin-right: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+#contactanos>div{
+    font-size: 25px;
+    color: blue;
+}
+
+
+/*-------SERVICIOS--------*/
+
+#servicios1{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+}
+
+#clase1{
+    line-height: 3px;
+    float: left;
+    margin-left: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+    vertical-align: middle;
+}
+
+#clase1>img{
+    margin-left: 20px;
+    float: left;
+    height: 300px;
+}
+
+#clase2{
+    line-height: 3px;
+    float: right;
+    margin-left: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+
+#clase2>img{
+    margin-left: 20px;
+    float: right;
+    height: 300px;
+}
+
+#servicios2{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+}
+
+#clase3{
+    line-height: 3px;
+    float: left;
+    margin-left: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+
+#clase3>img{
+    margin-left: 20px;
+    float: left;
+    height: 300px;
+}
+
+#clase4{
+    line-height: 3px;
+    float: right;
+    margin-left: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+
+#clase4>img{
+    padding-right: 100px;
+    margin-left: 20px;
+    float: right;
+    height: 300px;
+}
+
+
+
