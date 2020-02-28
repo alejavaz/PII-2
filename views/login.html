@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicia Sesion</title>
+    <link rel="stylesheet" href="../css/mystyles.css">
 </head>
-<body>
-    <form 
+
+<body id="login" style="width: 50%; float: left">
+
+    <div id="img1" >
+        <img src="../images/esencia_latina.png" alt="">
+    </div>
+
+    <div id="text1">
+        <p>Bienvenido!</p>
+        <p>Inicia sesion con tus credenciales</p>
+    </div>
+
+    <div id="forma">
+
+        <form id="forma_log"
     
-    action="http://localhost/PII-2/php/logincontroller.php" 
-    method="get">
+            action="http://localhost/PII-2/php/logincontroller.php" 
+            method="get">
 
-    <label for="">User email</label>
-    <input type="email" name="useremail" id="">
+            <label for="">Usuario</label>
+            <input type="email" name="useremail" id="">
 
-    <label for="">User password</label>
-    <input type="password" name="userpassword" id="">
+            <label for="">Contraseña</label>
+            <input type="password" name="userpassword" id="">
 
-    <input type="submit" value="enviar">
+            <input id="b1" type="submit" value="Enviar" >
         
-    </form>
+        </form>
+
+    
+    </div>
+
+    <div id="text1">
+
+        <br>
+        <br>
+        <a href="http://localhost/PII-2/index_access.html" >Regresar</a>
+
+    </div>
     
 </body>
 </html>
