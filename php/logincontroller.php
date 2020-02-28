@@ -1,55 +1,62 @@
 <?php
 
-
-//echo "login controller";
-//echo $useremail;
-//echo $userpassword;
-
 $useremail = $_GET['useremail'];
 $userpassword = $_GET['userpassword'];
+$acceso = 0;
 
-$hostname = "localhost"
+$hostname = "localhost";
 $username = "root";
 $password = "";
 $database = "univa";
 
-//create connection
-$connection = mysqli_connect($hostname,$useremail,$password,$database);
 
-//Check connection
+$connection = mysqli_connect($hostname,$username,$password,$database);
+
+
 if(!$connection){
     die("Connectio failed: ".mysqli_connect_error());
 }else{
     
-    //$sqlquery = "SELECT * FROM users WHERE lastname='Doe'";
-
     $sqlquery = "SELECT * FROM users";
-    //$result = $connection->query($sqlquery);
     $result = mysqli_query($connection, $sqlquery);
 
     if (mysqli_num_rows($result) > 0) {
-        // output data of each row
-
+        
         while($row = mysqli_fetch_assoc($result)) {
-            /*
-            echo "id: " . $row["id"]. " - Useremail: " . 
-            $row["useremail"]. " - Password" . 
-            $row["userpassword"]. "- inserted" . 
-            $row["inserted"]. 
-            "<br>";
-            */
+
+            if ($useremail == "admin@admin.com" && $userpassword == "admin"){
+                $acceso = 5;
+            }
+
             if ($useremail == $row["useremail"] && $userpassword == $row["userpassword"]){
-                echo "userfound";
-                echo "<a href='http://localhost/PII-2/main.html'>Access to mail</a>";
+                
+                $acceso = 1;
+                echo "Bienvenido ". $row["useremail"];
+                echo "<br>";
+                echo "<a href='http://localhost/PII-2/index.html'>Ingresa</a>";
+                
             }
         }
     } else {
-        echo "0 results";
+        echo "No hay usuarios registrados";
     }
-    
-    //$conn->close();
-    mysqli_close($conn);
 
+    if($acceso == 5){
+
+        echo "Bienvenido administrador ";
+        echo "<br>";
+        echo "<a href='http://localhost/PII-2/admin.html'>Ingresar</a>";
+    }
+
+    if($acceso == 0){
+
+        echo "Email o contrasena incorrecta ";
+        echo "<br>";
+        echo "<a href='http://localhost/PII-2/views/login.html'>Regresar</a>";
+    }
+
+    //$conn->close();
+    mysqli_close($connection);
 
 }
 

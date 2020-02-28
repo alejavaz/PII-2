@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador</title> 
+    <link rel="stylesheet" href="css/mystyles.css">
+</head>
+
+
+
+<body>
+
+
+    <header id="cintillo">
+        <img src="images/esencia_latina.png" alt="">
+        <h1>Escencia Latina</h1>
+        
+    </header>
+
+
+<section id="mostrar1">
+
+    <div id="mostrar2">
+        <img src="images/usuarios.png" alt="">
+    </div>
+
+    <div id="mostrar4">
+        <br>
+        <input id="butt" type="button" onclick="location.href='http://localhost/PII-2/php/mostrar.php';" value="Mostrar Usuarios registrados" />
+    </div>
+
+
+
+</section> 
+
+<div id="separacion">
+</div>
+
+
+<section id="mostrar1">
+
+
+    <div id="mostrar2">
+        <img src="images/modify.png" alt="">
+    </div>
+
+
+    <div id="mostrar5">
+
+        <form
+        action="http://localhost/PII-2/php/modificar.php" 
+        method="get"> 
+
+        <p><label for="">Email actual:  </label>
+        <input type="email" name="usuarioactual" id="" size="30" >   </p>
+
+        <p><label for="">Email nuevo:  </label>
+        <input type="email" name="usuariomod" id="" size="30">   </p>
+
+        <p><input id="butt" type="submit" value="Modificar Usuario" /></p>
+        
+
+        </form>
+
+    </div>
+
+</section> 
+
+<div id="separacion">
+</div>
+
+
+
+
+<section id="mostrar1">
+
+
+    <div id="mostrar2">
+        <img src="images/delete.png" alt="">
+    </div>
+
+
+    <div id="mostrar5">
+
+        <form
+        action="http://localhost/PII-2/php/borrar.php" 
+        method="get"> 
+
+        <p><label for="">Usuario:  </label>
+        <input type="email" name="usuario" id="" size="30" >   </p>
+
+        <input id="butt" type="submit" value="Borrar" >
+
+        
+        </form>
+
+    </div>
+
+</section> 
+
+
+
+<div >
+    <input id="butt" type="button" onclick="location.href='//localhost/PII-2/index_access.html';" value="Terminar Sesion" />
+</div>
+
+    
+</section> 
+
+
+</body>
+
+</html>
+
